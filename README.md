@@ -1,3 +1,4 @@
+
 # Data Processing for Big Data
 
 ## Overview
@@ -74,3 +75,60 @@ To set up and run the project locally, follow these steps:
 1. **Clone the repository**:
    ```sh
    git clone https://github.com/NguyenHuy190303/Big-Data-Processing.git
+   ```
+
+2. **Navigate into the project directory**:
+   ```sh
+   cd Big-Data-Processing
+   ```
+
+3. **Set up a virtual environment** (optional but recommended):
+   ```sh
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scriptsctivate
+   ```
+
+4. **Install the required dependencies**:
+   ```sh
+   pip install -r requirements.txt
+   ```
+   This command will install the necessary packages including `PySpark`, `pymongo` for MongoDB interaction, `NLTK` for text analysis, and `Matplotlib` for data visualization.
+
+5. **Install NLTK data** (for stopwords):
+   ```python
+   import nltk
+   nltk.download('stopwords')
+   ```
+
+6. **Ensure MongoDB is running**:
+   Make sure your MongoDB server is running locally or remotely before running any scripts that interact with the database.
+
+### Usage
+
+1. **Start MongoDB Server**:
+   - For local MongoDB: 
+     ```sh
+     mongod --dbpath /your/db/path
+     ```
+   - Make sure the MongoDB server is running and accessible.
+
+2. **Run Jupyter Notebooks**:
+   - Start Jupyter:
+     ```sh
+     jupyter notebook
+     ```
+   - Open the respective notebook for each part:
+     - **Part A**: `PartA_Text_Data_Analysis.ipynb`
+     - **Part B**: `PartB_CSV_Data_Analysis.ipynb`
+     - **Part C**: `PartC_Weather_Forecasting.ipynb`
+   
+3. **Run the Cells**:
+   - Once the notebook is open, run the cells in order to execute the data processing tasks.
+
+   - For **Part B**, ensure that MongoDB is up and running as the notebook interacts with it to read/write data.
+
+   - For **Part C**, run the cells to apply machine learning algorithms for weather forecasting and visualize the results.
+
+### License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
