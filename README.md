@@ -1,4 +1,4 @@
-# Data Processing for Big Data - FIT5202
+# Data Processing for Big Data
 
 ## Overview
 
